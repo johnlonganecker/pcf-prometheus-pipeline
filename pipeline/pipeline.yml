@@ -97,6 +97,7 @@ jobs:
       - prometheus-release-git/manifests/operators/monitor-cf.yml
       - prometheus-release-git/manifests/operators/monitor-node.yml
       - pcf-prometheus-pipeline/pcf-cloud-config-ops.yml
+      - pcf-prometheus-pipeline/alertmanager.yml
       vars:
         network: ((deploy_network))
         azs: ((deploy_azs))

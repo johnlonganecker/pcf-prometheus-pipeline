@@ -1,0 +1,38 @@
+##############
+# SMTP
+##############
+
+# SMTP From header field
+- type: replace
+  path: /instance_groups/name=alertmanager/jobs/name=alertmanager/properties/alertmanager/smtp/from
+  value: 
+
+# SMTP smarthost used for sending emails
+- type: replace
+  path: /instance_groups/name=alertmanager/jobs/name=alertmanager/properties/alertmanager/smtp/smarthost
+  value: 
+
+# SMTP authentication username
+- type: replace
+  path: /instance_groups/name=alertmanager/jobs/name=alertmanager/properties/alertmanager/smtp/auth_username
+  value:
+
+# SMTP authentication password
+- type: replace
+  path: /instance_groups/name=alertmanager/jobs/name=alertmanager/properties/alertmanager/smtp/auth_password
+  value: 
+
+# SMTP authentication secret
+#- type: replace
+#  path: /instance_groups/name=alertmanager/jobs/name=alertmanager/properties/alertmanager/smtp/auth_secret
+#  value:
+
+# SMTP authentication identity
+#- type: replace
+#  path: /instance_groups/name=alertmanager/jobs/name=alertmanager/properties/alertmanager/smtp/auth_identity
+#  value: 
+
+# SMTP TLS requirement
+- type: replace
+  path: /instance_groups/name=alertmanager/jobs/name=alertmanager/properties/alertmanager/smtp/require_tls
+  value: 
